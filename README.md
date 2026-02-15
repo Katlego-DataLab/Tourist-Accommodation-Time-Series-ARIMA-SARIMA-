@@ -32,17 +32,8 @@ Forecast vs actual occupancy rates
 
 readxl, dplyr, tidyr, stringr, lubridate, ggplot2, scales, forecast, tseries, knitr
 
-4.  Repository Contents
 
-Tourist accomodation From 2007.xlsx – Original dataset
-
-Tourism_Occupancy_Forecasting.Rmd – Analysis script
-
-Tourism_Occupancy_Forecasting.html – HTML report
-
-Tourism_Occupancy_Forecasting.pdf – PDF report
-
-5. Notes
+4. Notes
 
 SARIMA captures seasonal patterns in hotel occupancy rates
 

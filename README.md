@@ -4,7 +4,7 @@ Author: Katlego Mathebula
 
 Time-series analysis of South African tourism accommodation using ARIMA and SARIMA models. This project forecasts occupancy rates, revenue, and room counts across different accommodation types, providing insights for tourism planning and decision-making.
 
-1. Key Features
+## 1. Key Features
 
 Cleaned and transformed tourism accommodation data (2007–2024)
 
@@ -16,7 +16,7 @@ Generated 5-year SARIMA forecasts with confidence intervals
 
 Evaluated models using RMSE, MAE, MAPE
 
-2. Visualizations
+## 2. Visualizations
 
 Occupancy rate trends by accommodation type
 
@@ -28,12 +28,12 @@ Forecast vs actual occupancy rates
 
 5-year SARIMA forecast with 80% & 95% confidence intervals
 
-3. Libraries Used
+## 3. Libraries Used
 
 readxl, dplyr, tidyr, stringr, lubridate, ggplot2, scales, forecast, tseries, knitr
 
 
-4. Notes
+## 4. Notes
 
 SARIMA captures seasonal patterns in hotel occupancy rates
 

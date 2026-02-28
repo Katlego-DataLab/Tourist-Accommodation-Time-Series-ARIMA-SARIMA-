@@ -2,9 +2,9 @@
 
 ### ARIMA & SARIMA Time-Series Modeling (2007–2024)
 
-**Author:** Katlego Mathebula
-**Tools Used:** R, ARIMA, SARIMA, Forecasting, Data Cleaning, Visualization
-**Project Type:** End-to-End Time Series Analytics Project
+*Author:* Katlego Mathebula
+*Tools Used:* R, ARIMA, SARIMA, Forecasting, Data Cleaning, Visualization
+*Project Type:* End-to-End Time Series Analytics Project
 
 
 ##  Project Overview

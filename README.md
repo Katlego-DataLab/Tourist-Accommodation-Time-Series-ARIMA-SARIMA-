@@ -102,16 +102,14 @@ The dataset includes:
 
 The dataset required extensive preprocessing:
 
-### Steps Performed:
-
-✔ Removed irrelevant columns
-✔ Split combined categorical fields
-✔ Standardized text formatting
-✔ Extracted currency indicators
-✔ Converted wide-format monthly data to long format
-✔ Created proper date variables
-✔ Converted values to numeric format
-✔ Engineered separate variables for:
+### Steps Performed: Removed irrelevant columns
+- Split combined categorical fields
+- Standardized text formatting
+-  Extracted currency indicators
+- Converted wide-format monthly data to long format
+-  Created proper date variables
+- Converted values to numeric format
+- Engineered separate variables for:
 
 - Currency value
 - Occupancy rate
@@ -251,18 +249,17 @@ install.packages(c("readxl","dplyr","tidyr","lubridate",
 3. Open the `.Rmd` file in RStudio
 4. Click **Knit** to generate the HTML/PDF report
 
----
 
-## 📈 Why This Project Stands Out
+##  Why This Project Stands Out
 
-✔ Real economic dataset
-✔ End-to-end data pipeline
-✔ Advanced time-series modeling
-✔ Business interpretation included
-✔ Confidence interval forecasting
-✔ Model comparison
-✔ Professional visualization
-✔ Industry-relevant use case
+- Real economic dataset
+- End-to-end data pipeline
+- Advanced time-series modeling
+- Business interpretation included
+- Confidence interval forecasting
+- Model comparison
+- Professional visualization
+- Industry-relevant use case
 
 This is not just a coding project — it is a **decision-support analytics project**.
 
@@ -270,9 +267,9 @@ This is not just a coding project — it is a **decision-support analytics proje
 
 - Add Prophet modeling
 - Include external variables (GDP, exchange rate, inflation)
-- Build interactive dashboard (Shiny)
+- Build an interactive dashboard (Shiny)
 - Compare additional models (ETS, LSTM)
-- Deploy forecast as web app
+- Deploy forecast as a web app
 - Automate monthly updates
 
 
@@ -281,4 +278,3 @@ This is not just a coding project — it is a **decision-support analytics proje
 
 
 
-Just tell me the vibe you want 🚀

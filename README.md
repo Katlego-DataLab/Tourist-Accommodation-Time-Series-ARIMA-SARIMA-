@@ -9,7 +9,7 @@
 
 ##  Project Overview
 
-This project analyzes **tourism accommodation trends in South Africa (2007–2024)** and builds predictive time-series models using **ARIMA and SARIMA** to forecast **hotel occupancy rates** for the next 5 years.
+This project analyzes *tourism accommodation trends in South Africa (2007–2024)* and builds predictive time-series models using **ARIMA and SARIMA** to forecast **hotel occupancy rates** for the next 5 years.
 
 The project includes:
 

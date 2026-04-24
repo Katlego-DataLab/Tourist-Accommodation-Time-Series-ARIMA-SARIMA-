@@ -6,7 +6,7 @@
 
 ## 📌 Project Overview
 
-South Africa's tourism sector is a critical economic pillar — yet the COVID-19 pandemic shattered its accommodation industry almost overnight. This project uses **official Statistics South Africa Tourist Accommodation Survey data (2007–2025)** to analyse performance trends, quantify the pandemic's impact, and forecast hotel occupancy rates through 2030 using SARIMA time series modelling.
+South Africa's tourism sector is a critical economic pillar yet the COVID-19 pandemic shattered its accommodation industry almost overnight. This project uses **official Statistics South Africa Tourist Accommodation Survey data (2007–2025)** to analyse performance trends, quantify the pandemic's impact, and forecast hotel occupancy rates through 2030 using SARIMA time series modelling.
 
 | 📋 Detail | Value |
 |---|---|
@@ -124,7 +124,7 @@ The hotel occupancy time series was split **80/20 (train/test)** — approximate
 | MAE | Higher | Lower ✅ |
 | **MAPE** | **28.38%** | **6.17%** ✅ |
 
-**SARIMA outperformed ARIMA by 78% in MAPE**, confirming that capturing seasonality is essential for accommodation data — which exhibits strong annual cycles tied to school holidays, summer travel, and December peaks.
+**SARIMA outperformed ARIMA by 78% in MAPE**, confirming that capturing seasonality is essential for accommodation data which exhibits strong annual cycles tied to school holidays, summer travel, and December peaks.
 
 ### 📈 5-Year Forecast (2025–2030)
 The final SARIMA model trained on the full dataset projects:
@@ -471,7 +471,7 @@ p7 <- ggplot(covid_df, aes(x = Period, y = PercentageValue, fill = Period)) +
 ggsave("plots/covid_period_comparison.png", p7, width = 10, height = 5, dpi = 150)
 print(p7)
 
-message("✅ All 7 plots saved to /plots/")
+message(" All 7 plots saved to /plots/")
 ```
 
 ---
@@ -488,7 +488,7 @@ message("✅ All 7 plots saved to /plots/")
 ## 👩‍💻 Author
 
 **Mathebula Salphina Katlego**  
-Diploma in Mathematical Sciences — Cape Peninsula University of Technology  
+Diploma in Mathematical Sciences, Cape Peninsula University of Technology  
 Module: Mathematical Sciences Project 3 (MSP360S) · October 2025  
 Supervisor: Mr. M. Nombela
 

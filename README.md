@@ -1,4 +1,4 @@
-# 🏨 Tourist Accommodation in South Africa — Time Series Analysis & Forecasting
+# 🏨 Tourist Accommodation in South Africa, Time Series Analysis & Forecasting
 
 > **Forecasting hotel occupancy rates using SARIMA modelling on 18+ years of Statistics South Africa survey data.**
 
@@ -10,7 +10,7 @@ South Africa's tourism sector is a critical economic pillar yet the COVID-19 pan
 
 | 📋 Detail | Value |
 |---|---|
-| **Data Source** | Statistics South Africa — Tourist Accommodation Survey |
+| **Data Source** | Statistics South Africa Tourist Accommodation Survey |
 | **Time Span** | January 2007 → June 2025 *(18.5 years)* |
 | **Total Observations** | 16,650 records |
 | **Accommodation Types** | 5 *(Hotels, Guest Houses & Guest Farms, Caravan Parks & Camping Sites, Other, Total Industry)* |

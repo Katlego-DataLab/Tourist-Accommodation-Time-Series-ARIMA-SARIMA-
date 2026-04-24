@@ -78,7 +78,7 @@ This separation prevents mixing incompatible units in downstream calculations an
 
 ---
 
-## 📊 Exploratory Analysis — Key Findings
+## 📊 Exploratory Analysis, Key Findings
 
 ### 🏨 Hotel Occupancy: Before vs. During vs. After COVID-19
 

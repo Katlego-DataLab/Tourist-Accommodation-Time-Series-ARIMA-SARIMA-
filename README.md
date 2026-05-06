@@ -1,5 +1,7 @@
 # 🏨 Tourist Accommodation in South Africa, Time Series Analysis & Forecasting
 
+## Katlego | ML Engineer (Time Series & Forecasting)
+
 > **Forecasting hotel occupancy rates using SARIMA modelling on 18+ years of Statistics South Africa survey data.**
 
 ---

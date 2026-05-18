@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
 
 > **Can a deep learning model outperform a purpose-built statistical model on highly seasonal time series data?**
-> This project answers that question using 18 years of official South African hotel occupancy data — running SARIMA in R first to set an honest baseline, then building an LSTM in PyTorch to directly challenge it.
+> This project answers that question using 18 years of official South African hotel occupancy data  running SARIMA in R first to set an honest baseline, then building an LSTM in PyTorch to directly challenge it.
 
 ---
 
@@ -38,7 +38,6 @@ This is intentional, not inconsistency. The two stages use the best tool for eac
 | Data cleaning, EDA, statistical modelling | **R** | `tidyverse`, `forecast`, and `auto.arima` are the industry standard for time series statistics |
 | Deep learning, sequence modelling | **Python / PyTorch** | PyTorch is the dominant framework for neural network research and production ML engineering |
 
-Real data science teams work this way. Showing you can operate across both ecosystems is a skill signal, not a limitation.
 
 ---
 
@@ -77,7 +76,7 @@ SARIMA wins because hotel occupancy has strong annual patterns (December peaks, 
 
 ### Export for Stage 2
 
-Add this single line at the bottom of your R script to pass the data to Python:
+Passing the data to Python
 
 ```r
 write.csv(Hotel_Occupancy, "hotel_occupancy.csv", row.names = FALSE)
@@ -103,7 +102,7 @@ The Python script takes the same hotel occupancy series and challenges the SARIM
 
 ### Feature engineering
 
-The LSTM receives 8 input features per time step — compared to SARIMA which only sees the raw occupancy value:
+The LSTM receives 8 input features per time step compared to SARIMA which only sees the raw occupancy value:
 
 | Feature | What it gives the model |
 |---------|------------------------|
@@ -142,11 +141,11 @@ Input: (batch, 24 months, 8 features)
 
 | Setting | Value | Reason |
 |---------|-------|--------|
-| Split | 80/20 chronological | no shuffling — time order is sacred |
+| Split | 80/20 chronological | no shuffling, time order is sacred |
 | Loss | MSE | standard for regression |
 | Optimiser | Adam (lr=0.001) | adaptive learning rate |
 | LR scheduler | ReduceLROnPlateau | halves LR if val loss plateaus for 10 epochs |
-| Grad clipping | max norm = 1.0 | prevents exploding gradients — a known LSTM issue |
+| Grad clipping | max norm = 1.0 | prevents exploding gradients a known LSTM issue |
 | Best weights | saved + restored | prevents overfitting to final epoch |
 
 ### Results
@@ -157,7 +156,6 @@ Input: (batch, 24 months, 8 features)
 | SARIMA (R) | 6.17% | baseline |
 | **LSTM (PyTorch)** | *see your run* | *vs 6.17%* |
 
-> Fill in your LSTM MAPE after running `python sa_hotel_lstm.py`. The portfolio summary prints automatically at the end.
 
 ---
 
@@ -198,7 +196,7 @@ python sa_hotel_lstm.py
 
 ## Key Technical Decisions
 
-**Chronological split, no shuffling.** Shuffling a time series before splitting allows future data to inform past predictions — this is data leakage and produces artificially inflated metrics. Both stages use strict 80/20 chronological splits.
+**Chronological split, no shuffling.** Shuffling a time series before splitting allows future data to inform past predictions, this is data leakage and produces artificially inflated metrics. Both stages use strict 80/20 chronological splits.
 
 **Cyclical month encoding.** Encoding month as `sin` and `cos` rather than a raw integer (1–12) prevents the model from treating December (12) and January (1) as far apart. On a circle they are adjacent, which is the correct representation of the annual cycle.
 
@@ -206,7 +204,7 @@ python sa_hotel_lstm.py
 
 **Gradient clipping.** LSTMs can suffer from exploding gradients during backpropagation through long sequences. Clipping at max norm = 1.0 stabilises training without significantly slowing learning.
 
-**Best weights restoration.** The model checkpoint from the lowest validation loss epoch is restored after training. This acts like early stopping without actually stopping — the model trains for all 150 epochs but uses the best version it ever reached.
+**Best weights restoration.** The model checkpoint from the lowest validation loss epoch is restored after training. This acts like early stopping without actually stopping the model trains for all 150 epochs but uses the best version it ever reached.
 
 ---
 

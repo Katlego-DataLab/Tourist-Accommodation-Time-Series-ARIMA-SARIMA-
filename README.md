@@ -10,7 +10,7 @@
 > This project answers that question using 18 years of official South African hotel occupancy data  running SARIMA in R first to set an honest baseline, then building an LSTM in PyTorch to directly challenge it.
 
 ---
-
+![SA Hotel Occupancy Forecasting — SARIMA vs LSTM Results](https://raw.githubusercontent.com/Katlego-DataLab/Tourist-Accommodation-Time-Series-ARIMA-SARIMA-/main/Tourist%20Accodation%20python%20and%20R%20project%20combined.png)
 ## Project Structure
 
 ```

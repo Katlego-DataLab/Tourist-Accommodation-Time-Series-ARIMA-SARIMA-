@@ -45,7 +45,7 @@ This is intentional, not inconsistency. The two stages use the best tool for eac
 
 **Source:** Statistics South Africa Tourist Accommodation Survey
 **Period:** January 2007 → June 2025 (18.5 years, 222 monthly observations)
-**Target:** Hotel occupancy rate (%) — percentage of available rooms occupied each month
+**Target:** Hotel occupancy rate (%) percentage of available rooms occupied each month
 **Notable event:** COVID-19 caused a collapse from ~49% average to 1.5% in April 2020
 
 ---
